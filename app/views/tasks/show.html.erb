@@ -1,0 +1,10 @@
+
+<ul class="m-5 list-group">
+  <li class="list-group-item"><%= @taskShow.title %></li>
+  <li class="list-group-item"><%= @taskShow.details %></li>
+  <li class="list-group-item"><%= @taskShow.completed %></li>
+  <li class="list-group-item"><%= link_to "Delete",
+    task_path(@taskShow),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+  %></li>
+</ul>

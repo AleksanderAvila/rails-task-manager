@@ -1,0 +1,5 @@
+<ol class = "m-5 list-group">
+<% @tasks.each do |task| %>
+<li class="list-group-item"><%= task.title%><%= link_to "Show", task_path(task) %></li>
+<% end %>
+</ol>
